@@ -1,0 +1,110 @@
+README for analysis of similarity between phylogenetic trees reconstructed from influenza A virus sequences presented in:
+"Parallel evolution between genomic segments of seasonal human influenza viruses reveals RNA-RNA relationships".
+
+# RATIONALE
+
+The script provided in this folder details how to reconstruct phylogenetic trees corresponding to each individual genomic segment of influenza viruses. Tree similarity is then assessed by tree distance measures, including the Robinson-Foulds distance (RF) and Clustering Information Distance (CID). FASTA files were sourced from the Influenza Research Database (http://www.fludb.org/) and processed as described in the Data Mining and Subsampling folder of this repository. An example analysis of replicate H3N2 virus trees is provided in 'Analysis of Tree Similarity.R'.
+
+# AUTHORS
+Jennifer E. Jones <jennyjones_xyz@pitt.edu>
+Erik S. Wright <eswright@pitt.edu>
+Seema S. Lakdawala <lakdawala@pitt.edu>
+
+# DEPENDENCIES
+R >= 4.1.0
+DECIPHER >= 2.20.0
+ape >= 5.5
+phangorn >=2.7.0
+RColorBrewer >= 1.1-2
+lattice >= 0.20-44
+plotrix >= 3.1-8
+TreeDist >= 2.0.3
+
+# TO RUN
+Install R, then all dependencies.
+Open "Analysis of Tree Similarity.R"
+Set working directory to path containing processed FASTA files.
+Source the code in R.
+
+# FILES
+Analysis of Tree Similarity.R = MAIN SCRIPT to perform all analyses
+Human influenza H3N2 segment 1-PB2 vRNA MSA - 2005-2014 OTU 1.fasta.gz = FASTA file with segment 1 (PB2) H3N2 sequences
+Human influenza H3N2 segment 2-PB1  vRNA MSA - 2005-2014 OTU 1.fasta.gz = FASTA file with segment 2 (PB1) H3N2 sequences
+Human influenza H3N2 segment 3-PA  vRNA MSA - 2005-2014 OTU 1.fasta.gz = FASTA file with segment 3 (PA) H3N2 sequences
+Human influenza H3N2 segment 4-HA  vRNA MSA - 2005-2014 OTU 1.fasta.gz = FASTA file with segment 4 (HA) H3N2 sequences
+Human influenza H3N2 segment 5-NP  vRNA MSA - 2005-2014 OTU 1.fasta.gz = FASTA file with segment 5 (NP) H3N2 sequences
+Human influenza H3N2 segment 6-NA  vRNA MSA - 2005-2014 OTU 1.fasta.gz = FASTA file with segment 6 (NA) H3N2 sequences
+Human influenza H3N2 segment 7-M  vRNA MSA - 2005-2014 OTU 1.fasta.gz = FASTA file with segment 7 (M) H3N2 sequences
+Human influenza H3N2 segment 8-NS  vRNA MSA - 2005-2014 OTU 1.fasta.gz = FASTA file with segment 8 (NS) H3N2 sequences
+Human influenza H3N2 segment 1-PB2 vRNA MSA - 2005-2014 OTU 2.fasta.gz = FASTA file with segment 1 (PB2) H3N2 sequences
+Human influenza H3N2 segment 2-PB1  vRNA MSA - 2005-2014 OTU 2.fasta.gz = FASTA file with segment 2 (PB1) H3N2 sequences
+Human influenza H3N2 segment 3-PA  vRNA MSA - 2005-2014 OTU 2.fasta.gz = FASTA file with segment 3 (PA) H3N2 sequences
+Human influenza H3N2 segment 4-HA  vRNA MSA - 2005-2014 OTU 2.fasta.gz = FASTA file with segment 4 (HA) H3N2 sequences
+Human influenza H3N2 segment 5-NP  vRNA MSA - 2005-2014 OTU 2.fasta.gz = FASTA file with segment 5 (NP) H3N2 sequences
+Human influenza H3N2 segment 6-NA  vRNA MSA - 2005-2014 OTU 2.fasta.gz = FASTA file with segment 6 (NA) H3N2 sequences
+Human influenza H3N2 segment 7-M  vRNA MSA - 2005-2014 OTU 2.fasta.gz = FASTA file with segment 7 (M) H3N2 sequences
+Human influenza H3N2 segment 8-NS  vRNA MSA - 2005-2014 OTU 2.fasta.gz = FASTA file with segment 8 (NS) H3N2 sequences
+Human influenza H3N2 segment 1-PB2 vRNA MSA - 2005-2014 OTU 3.fasta.gz = FASTA file with segment 1 (PB2) H3N2 sequences
+Human influenza H3N2 segment 2-PB1  vRNA MSA - 2005-2014 OTU 3.fasta.gz = FASTA file with segment 2 (PB1) H3N2 sequences
+Human influenza H3N2 segment 3-PA  vRNA MSA - 2005-2014 OTU 3.fasta.gz = FASTA file with segment 3 (PA) H3N2 sequences
+Human influenza H3N2 segment 4-HA  vRNA MSA - 2005-2014 OTU 3.fasta.gz = FASTA file with segment 4 (HA) H3N2 sequences
+Human influenza H3N2 segment 5-NP  vRNA MSA - 2005-2014 OTU 3.fasta.gz = FASTA file with segment 5 (NP) H3N2 sequences
+Human influenza H3N2 segment 6-NA  vRNA MSA - 2005-2014 OTU 3.fasta.gz = FASTA file with segment 6 (NA) H3N2 sequences
+Human influenza H3N2 segment 7-M  vRNA MSA - 2005-2014 OTU 3.fasta.gz = FASTA file with segment 7 (M) H3N2 sequences
+Human influenza H3N2 segment 8-NS  vRNA MSA - 2005-2014 OTU 3.fasta.gz = FASTA file with segment 8 (NS) H3N2 sequences
+Human influenza H3N2 segment 1-PB2 vRNA MSA - 2005-2014 OTU 4.fasta.gz = FASTA file with segment 1 (PB2) H3N2 sequences
+Human influenza H3N2 segment 2-PB1  vRNA MSA - 2005-2014 OTU 4.fasta.gz = FASTA file with segment 2 (PB1) H3N2 sequences
+Human influenza H3N2 segment 3-PA  vRNA MSA - 2005-2014 OTU 4.fasta.gz = FASTA file with segment 3 (PA) H3N2 sequences
+Human influenza H3N2 segment 4-HA  vRNA MSA - 2005-2014 OTU 4.fasta.gz = FASTA file with segment 4 (HA) H3N2 sequences
+Human influenza H3N2 segment 5-NP  vRNA MSA - 2005-2014 OTU 4.fasta.gz = FASTA file with segment 5 (NP) H3N2 sequences
+Human influenza H3N2 segment 6-NA  vRNA MSA - 2005-2014 OTU 4.fasta.gz = FASTA file with segment 6 (NA) H3N2 sequences
+Human influenza H3N2 segment 7-M  vRNA MSA - 2005-2014 OTU 4.fasta.gz = FASTA file with segment 7 (M) H3N2 sequences
+Human influenza H3N2 segment 8-NS  vRNA MSA - 2005-2014 OTU 4.fasta.gz = FASTA file with segment 8 (NS) H3N2 sequences
+Human influenza H3N2 segment 1-PB2 vRNA MSA - 2005-2014 OTU 5.fasta.gz = FASTA file with segment 1 (PB2) H3N2 sequences
+Human influenza H3N2 segment 2-PB1  vRNA MSA - 2005-2014 OTU 5.fasta.gz = FASTA file with segment 2 (PB1) H3N2 sequences
+Human influenza H3N2 segment 3-PA  vRNA MSA - 2005-2014 OTU 5.fasta.gz = FASTA file with segment 3 (PA) H3N2 sequences
+Human influenza H3N2 segment 4-HA  vRNA MSA - 2005-2014 OTU 5.fasta.gz = FASTA file with segment 4 (HA) H3N2 sequences
+Human influenza H3N2 segment 5-NP  vRNA MSA - 2005-2014 OTU 5.fasta.gz = FASTA file with segment 5 (NP) H3N2 sequences
+Human influenza H3N2 segment 6-NA  vRNA MSA - 2005-2014 OTU 5.fasta.gz = FASTA file with segment 6 (NA) H3N2 sequences
+Human influenza H3N2 segment 7-M  vRNA MSA - 2005-2014 OTU 5.fasta.gz = FASTA file with segment 7 (M) H3N2 sequences
+Human influenza H3N2 segment 8-NS  vRNA MSA - 2005-2014 OTU 5.fasta.gz = FASTA file with segment 8 (NS) H3N2 sequences
+Human influenza H3N2 segment 1-PB2 vRNA MSA - 2005-2014 OTU 6.fasta.gz = FASTA file with segment 1 (PB2) H3N2 sequences
+Human influenza H3N2 segment 2-PB1  vRNA MSA - 2005-2014 OTU 6.fasta.gz = FASTA file with segment 2 (PB1) H3N2 sequences
+Human influenza H3N2 segment 3-PA  vRNA MSA - 2005-2014 OTU 6.fasta.gz = FASTA file with segment 3 (PA) H3N2 sequences
+Human influenza H3N2 segment 4-HA  vRNA MSA - 2005-2014 OTU 6.fasta.gz = FASTA file with segment 4 (HA) H3N2 sequences
+Human influenza H3N2 segment 5-NP  vRNA MSA - 2005-2014 OTU 6.fasta.gz = FASTA file with segment 5 (NP) H3N2 sequences
+Human influenza H3N2 segment 6-NA  vRNA MSA - 2005-2014 OTU 6.fasta.gz = FASTA file with segment 6 (NA) H3N2 sequences
+Human influenza H3N2 segment 7-M  vRNA MSA - 2005-2014 OTU 6.fasta.gz = FASTA file with segment 7 (M) H3N2 sequences
+Human influenza H3N2 segment 8-NS  vRNA MSA - 2005-2014 OTU 6.fasta.gz = FASTA file with segment 8 (NS) H3N2 sequences
+Human influenza H3N2 segment 1-PB2 vRNA MSA - 2005-2014 OTU 7.fasta.gz = FASTA file with segment 1 (PB2) H3N2 sequences
+Human influenza H3N2 segment 2-PB1  vRNA MSA - 2005-2014 OTU 7.fasta.gz = FASTA file with segment 2 (PB1) H3N2 sequences
+Human influenza H3N2 segment 3-PA  vRNA MSA - 2005-2014 OTU 7.fasta.gz = FASTA file with segment 3 (PA) H3N2 sequences
+Human influenza H3N2 segment 4-HA  vRNA MSA - 2005-2014 OTU 7.fasta.gz = FASTA file with segment 4 (HA) H3N2 sequences
+Human influenza H3N2 segment 5-NP  vRNA MSA - 2005-2014 OTU 7.fasta.gz = FASTA file with segment 5 (NP) H3N2 sequences
+Human influenza H3N2 segment 6-NA  vRNA MSA - 2005-2014 OTU 7.fasta.gz = FASTA file with segment 6 (NA) H3N2 sequences
+Human influenza H3N2 segment 7-M  vRNA MSA - 2005-2014 OTU 7.fasta.gz = FASTA file with segment 7 (M) H3N2 sequences
+Human influenza H3N2 segment 8-NS  vRNA MSA - 2005-2014 OTU 7.fasta.gz = FASTA file with segment 8 (NS) H3N2 sequences
+H3N2 2005-2014 Strains Analyzed - ape.csv = Strains selected for building phylogenetic trees
+
+# CHANGING THE DATASET
+To change the dataset, change the file names of each gene segment fasta file:
+Human influenza H3N2 segment 1-PB2  vRNA MSA - 2005-2014 OTU 1.fasta.gz
+and:
+Human influenza H3N2 segment 2-PB1  vRNA MSA - 2005-2014 OTU 1.fasta.gz
+and:
+Human influenza H3N2 segment 3-PA  vRNA MSA - 2005-2014 OTU 1.fasta.gz
+and:
+Human influenza H3N2 segment 4-HA  vRNA MSA - 2005-2014 OTU 1.fasta.gz
+and:
+Human influenza H3N2 segment 5-NP  vRNA MSA - 2005-2014 OTU 1.fasta.gz
+and:
+Human influenza H3N2 segment 6-NA  vRNA MSA - 2005-2014 OTU 1.fasta.gz
+and:
+Human influenza H3N2 segment 7-M  vRNA MSA - 2005-2014 OTU 1.fasta.gz
+and:
+Human influenza H3N2 segment 8-NS  vRNA MSA - 2005-2014 OTU 1.fasta.gz
+and:
+H3N2 2005-2014 Strains Analyzed - ape.csv
+and 
+in:
+Analysis of Tree Similarity.R
