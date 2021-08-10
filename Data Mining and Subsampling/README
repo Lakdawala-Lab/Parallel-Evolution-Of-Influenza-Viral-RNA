@@ -1,0 +1,68 @@
+README for mining and subsampling of influenza A virus sequences presented in:
+"Parallel evolution between genomic segments of seasonal human influenza viruses reveals RNA-RNA relationships".
+
+# RATIONALE
+
+The script provided in this folder details how to clean up FASTA files, removing duplicates and ensuring that only full-length genomes are analyzed. Optionally, this script also describes how to cluster and subsample sequences prior to analysis. Analysis of tree similarity is provided in a separate sub-folder of this repository. Preprocessed FASTA files were sourced from the Influenza Research Database (http://www.fludb.org/). 
+
+# AUTHORS
+Jennifer E. Jones <jennyjones_xyz@pitt.edu>
+Erik S. Wright <eswright@pitt.edu>
+Seema S. Lakdawala <lakdawala@pitt.edu>
+
+# DEPENDENCIES
+R >= 4.1.0
+DECIPHER >= 2.20.0
+
+# TO RUN
+Install R, then DECIPHER.
+Open "Data Mining and Subsampling.R"
+Set working directory to path containing FASTA files.
+Source the code in R.
+
+# FILES
+Data Mining and Subsampling.R = MAIN SCRIPT to perform all analyses
+Human influenza H3N2 segment 1-PB2 sequences.fasta.gz = FASTA file with segment 1 (PB2) H3N2 sequences
+Human influenza H3N2 segment 2-PB1 sequences.fasta.gz = FASTA file with segment 2 (PB1) H3N2 sequences
+Human influenza H3N2 segment 3-PA sequences.fasta.gz = FASTA file with segment 3 (PA) H3N2 sequences
+Human influenza H3N2 segment 4-HA sequences.fasta.gz = FASTA file with segment 4 (HA) H3N2 sequences
+Human influenza H3N2 segment 5-NP sequences.fasta.gz = FASTA file with segment 5 (NP) H3N2 sequences
+Human influenza H3N2 segment 6-NA sequences.fasta.gz = FASTA file with segment 6 (NA) H3N2 sequences
+Human influenza H3N2 segment 7-M sequences.fasta.gz = FASTA file with segment 7 (M) H3N2 sequences
+Human influenza H3N2 segment 8-NS sequences.fasta.gz = FASTA file with segment 8 (NS) H3N2 sequences
+Human influenza H1N1 segment 1-PB2 sequences.fasta.gz = FASTA file with segment 1 (PB2) H1N1 sequences
+Human influenza H1N1 segment 2-PB1 sequences.fasta.gz = FASTA file with segment 2 (PB1) H1N1 sequences
+Human influenza H1N1 segment 3-PA sequences.fasta.gz = FASTA file with segment 3 (PA) H1N1 sequences
+Human influenza H1N1 segment 4-HA sequences.fasta.gz = FASTA file with segment 4 (HA) H1N1 sequences
+Human influenza H1N1 segment 5-NP sequences.fasta.gz = FASTA file with segment 5 (NP) H1N1 sequences
+Human influenza H1N1 segment 6-NA sequences.fasta.gz = FASTA file with segment 6 (NA) H1N1 sequences
+Human influenza H1N1 segment 7-M sequences.fasta.gz = FASTA file with segment 7 (M) H1N1 sequences
+Human influenza H1N1 segment 8-NS sequences.fasta.gz = FASTA file with segment 8 (NS) H1N1 sequences
+H3N2 1995-2004 Strains Analyzed.csv = Strains selected for building phylogenetic trees
+H3N2 2005-2014 Strains Analyzed.csv = Strains selected for building phylogenetic trees
+H1N1 2000-2008 Strains Analyzed.csv = Strains selected for building phylogenetic trees
+H1N1 2010-2018 Strains Analyzed.csv = Strains selected for building phylogenetic trees
+
+# CHANGING THE DATASET
+To change the dataset, change the file names of each gene segment fasta file:
+Human influenza H3N2 segment 1-PB2 sequences.fasta.gz
+and:
+Human influenza H3N2 segment 2-PB1 sequences.fasta.gz
+and:
+Human influenza H3N2 segment 3-PA sequences.fasta.gz
+and:
+Human influenza H3N2 segment 4-HA sequences.fasta.gz
+and:
+Human influenza H3N2 segment 5-NP sequences.fasta.gz
+and:
+Human influenza H3N2 segment 6-NA sequences.fasta.gz
+and:
+Human influenza H3N2 segment 7-M sequences.fasta.gz
+and:
+Human influenza H3N2 segment 8-NS sequences.fasta.gz
+and:
+H3N2 2005-2014 Strains Analyzed.csv
+and 
+H3N2 1995-2004 Strains Analyzed.csv
+in:
+Data Mining and Subsampling.R
